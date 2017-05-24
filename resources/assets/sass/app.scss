@@ -1,0 +1,98 @@
+.table {
+    margin-bottom: 0 !important;
+    thead {
+        th {
+            position: relative;
+            &:hover {
+                cursor: pointer;
+            }
+            &.sort-none,
+            &.sort-asc,
+            &.sort-desc {
+                padding-left: 20px;
+                &:before {
+                    display: inline-block;
+                    font: normal normal normal 14px/1 FontAwesome;
+                    font-size: 14px;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    position: absolute;
+                    top: 50%;
+                    left: 8px;
+                    transform: translateY(-50%);
+                }
+            }
+
+            &.sort-none:before {
+                content: "\f0dc";
+            }
+            &.sort-asc:before {
+                content: "\f0de";
+                top: 21px;
+            }
+            &.sort-desc:before {
+                content: "\f0dd";
+                top: 15px;
+            }
+        }
+    }
+}
+
+/* Sidebar */
+@media (min-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  #page-wrapper {
+    margin-left: 200px;
+  }
+}
+
+/* Instant Search */
+.template-wrapper {
+    position: relative;
+    table {
+      min-height: 100px;
+    }
+    &.loading {
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10000;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+        }
+        &:after {
+            position: absolute;
+            left: calc(50% - 20px);
+            top: calc(50% - 20px);
+            z-index: 100000;
+            content: "\f110";
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 40px;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-animation: fa-spin 2s infinite linear;
+            animation: fa-spin 2s infinite linear;
+            color: #fff;
+        }
+    }
+}
+
+.navbar-header {
+    float: none !important;
+    padding-right: 15px;
+}
+
+.sidebar {
+    margin-top: 0px !important;
+}

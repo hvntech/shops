@@ -1,0 +1,122 @@
+.control-label.text-left {
+    text-align: left !important;
+}
+
+.expire {
+    background-color: #d3d3d3;
+}
+
+.purple {
+    background-color: #dbb7ff;
+}
+
+.orange {
+    background-color: #ffdbb7;
+}
+
+.green {
+    background-color: #b7ffdb;
+}
+
+.file-upload {
+    margin-left: -15px;
+    max-width: 100%;
+}
+
+#preview, #preview-thunbnai, #preview-banner {
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+.btn-edit, .btn-danger {
+    /*margin-top: 5px;*/
+}
+
+
+/** /login **/
+.login_banner {
+    padding: 30px;
+    width: 400px;
+    color: white;
+    margin: 3% auto;
+    font-size: x-large;
+}
+.login_banner_other {
+    background-color: green;
+}
+
+.login_banner_prod {
+    background-color: #c55a11;
+}
+
+.login_banner .stg {
+    font-size: xx-large;
+}
+
+.login_wrapper {
+    margin: 0 auto;
+    max-width: 500px;
+    position: relative;
+}
+
+.login_content {
+    margin: 0 auto;
+    padding: 25px 0 0;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    min-width: 280px;
+}
+
+.login_content .btn-primary:hover {
+    text-decoration: none;
+}
+
+.login_content form input {
+    color: #777;
+    width: 100%;
+    height: 40px;
+}
+
+.login_content form .form-group {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.login_content form #btnLogin {
+    margin-top: 15px;
+}
+
+.modal-body .form-group {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.history-edit-enquiry {
+    background-color: #a5a5a5;
+    border: 1px solid #3579b1;
+    border-radius: 4px;
+    padding: 6px 12px;
+    color: white;
+}
+
+.reply-enquiry {
+    background-color: #f4b081;
+    border: 1px solid #3579b1;
+    border-radius: 4px;
+    padding: 6px 12px;
+    color: white;
+}
+
+.wrap, table thead th, table tbody tr td {
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
