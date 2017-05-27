@@ -1,7 +1,7 @@
-<?php 
-	global $hk_options; 
+<?php
+	global $hk_options;
 	require_once dirname( __FILE__ ) . '/disable-updates.php';
-	if ($hk_options[hidemenu]==1){ 
+	if ($hk_options[hidemenu]==1){
 		add_filter('show_admin_bar', '__return_false');
 	}
 	add_action('wp_dashboard_setup', 'remove_redux_dashboard');
@@ -41,7 +41,7 @@
 	add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
 	add_action( 'admin_menu', 'my_remove_menus', 999 );
 	function my_remove_menus() {
-		global $hk_options; 
+		global $hk_options;
 		if ($hk_options[check][1]==1){ remove_menu_page( 'upload.php' );}
 		if ($hk_options[check][2]==1){ remove_menu_page( 'edit-comments.php' );}
 		if ($hk_options[check][3]==1){ remove_menu_page( 'wpcf7' );}
@@ -72,12 +72,10 @@
 	    <h2>Chào mừng đến với Hệ thống Quản Trị Website</h2>
 	    <p><strong>THÔNG TIN WEBSITE</strong></p>
 	    <P><?php echo bloginfo( 'name' ); ?></p>
-	    <p><strong>NHÀ PHÁT TRIỂN</strong></p>
-	    <p>Hệ thống được phát triển bởi <a href="http://huykira.net/"><strong>HuyKira.Net</strong></a></p>
 	    <p>Mọi yêu cầu, hỗ trợ quý khách hàng có thể liên hệ <strong>PHP Developers</strong></p>
-	    <p><strong>Điện thoại</strong>: 01658 949 68x</p> 
-	    <p><strong>Email</strong>: huykira@gmail.com - <strong>Website</strong>: <a href="http://huykira.net/"><strong>HuyKira.Net</strong></a></p> 
-	    <p><strong>Cảm ơn quý khách đã tin tưởng và sử dụng sản phẩm của Huy Kira.</strong></p>
+	    <p><strong>Điện thoại</strong>: 0904948872</p>
+	    <p><strong>Email</strong>: vanhuy.vu@gmail.com <strong></p>
+	    <p><strong>Cảm ơn quý khách.</strong></p>
 	<?php }
 
     add_filter('admin_title', 'my_admin_title', 10, 2);

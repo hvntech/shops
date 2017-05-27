@@ -36,7 +36,7 @@
 					<div class="related">
 						<h3 class="title-related">Bài viết liên quan</h3>
 						<ul class="row">
-							<?php foreach((get_the_category()) as $category) { 
+							<?php foreach((get_the_category()) as $category) {
 								$cat_id = $category->cat_ID; }
 								$args = array ( 'post_status' => 'publish',
 												'category__in' => $cat_id,

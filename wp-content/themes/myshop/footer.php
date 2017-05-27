@@ -13,13 +13,13 @@
 						<h3>Thời trang</h3>
 						<ul>
 						<!-- Get category -->
-						<?php $args = array( 
+						<?php $args = array(
 						    'hide_empty' => 0,
 						    'taxonomy' => 'product_cat',
 						    'orderby' => id,
 						    'parent' => 0
-						    ); 
-						    $cates = get_categories( $args ); 
+						    );
+						    $cates = get_categories( $args );
 						    foreach ( $cates as $cate ) {  ?>
 								<li>
 									<a href="<?php echo get_term_link($cate->slug, 'product_cat'); ?>"><?php echo $cate->name ?></a>
@@ -48,7 +48,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="copyright"> <?php echo $hk_options[copyr]; ?> - Xây dựng và phát triển bởi <a href="http://huykira.net">Huy Kira</a> </div>
+			<div class="copyright"> <?php echo $hk_options[copyr]; ?></div>
 		</div> <!-- end footer -->
 	</div> <!-- end wrapper -->
 	<script type="text/javascript" src="<?php bloginfo('template_directory' ); ?>/js/jquery-1.9.1.js"></script>

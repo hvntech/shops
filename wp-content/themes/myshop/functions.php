@@ -145,11 +145,11 @@ function get_link_thumb($post_id) {
 	$img_customfield = get_post_meta($post_id, 'thumb', true);
 	$img_attachment_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
 	$img_uploads = get_children( array('post_parent' => $post_id, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order ID', 'numberposts' => 1) );
-	
+
 	$post_content = get_post_field('post_content', $post_id);
 	$img_post = preg_match_all('/\< *[img][^\>]*src *= *[\"\']{0,1}([^\"\'\ >]*)/',$post_content,$matches);
 	$img_default = get_bloginfo('template_directory').'/images/no-thumb.png';
-	
+
 	// get thumbnail
 	if ($img_customfield) {
 		$link_thumb = $img_customfield;
@@ -179,7 +179,7 @@ function show_thumb($w,$h,$zc,$cropfrom) {
 	$img_default = get_bloginfo('template_directory').'/images/no-thumb.png';
 
 	$thumbnail = 'thumbnail.php';
-	
+
 	// get thumbnail
 	if ($img_customfield) {
 		print '<img src="'.get_bloginfo('template_directory').'/'.$thumbnail.'?src='.urlencode($img_customfield).'&amp;w='.$w.'&amp;h='.$h.'&amp;zc='.$zc.'&amp;a='.$cropfrom.'" alt="'.get_the_title($post).'" title="'.get_the_title($post).'"/>';

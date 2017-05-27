@@ -46,6 +46,34 @@
                             'desc'     => __( 'Câu chào mừng!', 'HuyKira' ),
                         ),
                         array(
+                            'id'       => 'sp1_head_text',
+                            'type'     => 'text',
+                            'title'    => __( 'Tiêu đề sldie nhóm sản phẩm 1', 'HuyKira' ),
+                            'compiler' => 'true',
+                            'desc'     => __( 'Sản phẩm nỗi bật, sản phẩm mới, đồ ăn nhanh,... ', 'HuyKira' ),
+                        ),
+                        array(
+                            'id'       => 'news_head_text',
+                            'type'     => 'text',
+                            'title'    => __( 'Tiêu đề tin tức', 'HuyKira' ),
+                            'compiler' => 'true',
+                            'desc'     => __( 'Tin tức, sự kiện, khuyến mãi, ...', 'HuyKira' ),
+                        ),
+                        array(
+                            'id'       => 'sp2_head_text',
+                            'type'     => 'text',
+                            'title'    => __( 'Tiêu đề sldie nhóm sản phẩm 2', 'HuyKira' ),
+                            'compiler' => 'true',
+                            'desc'     => __( 'Sản phẩm nỗi bật, sản phẩm mới, đồ ăn nhanh,... ', 'HuyKira' ),
+                        ),
+                        array(
+                            'id'       => 'sp_sidebar_text',
+                            'type'     => 'text',
+                            'title'    => __( 'Tiêu đề chuyên mục sidebar', 'HuyKira' ),
+                            'compiler' => 'true',
+                            'desc'     => __( 'Danh mục, chuyên mục, chuyên mục sản phẩm,...', 'HuyKira' ),
+                        ),
+                        array(
                             'id'       => 'r1',
                             'type'     => 'media',
                             'title'    => __( 'Banner trái 1', 'HuyKira' ),
@@ -88,7 +116,7 @@
                                'id' => 'section2-start',
                                'type' => 'section',
                                'title' => __('Thông tin liên hệ', 'HuyKira'),
-                               'indent' => true 
+                               'indent' => true
                            ),
                                 array(
                                     'id'       => 'addft',
@@ -130,7 +158,7 @@
                                'type' => 'section',
                                'title' => __('Liên kết với mạng xã hội', 'HuyKira'),
                                'subtitle'     => __( 'Nhập full link mạng xã hội vào từng khu vực!', 'HuyKira' ),
-                               'indent' => true 
+                               'indent' => true
                            ),
                                 array(
                                     'id'       => 'fb',
@@ -167,12 +195,12 @@
                                'id' => 'section-start',
                                'type' => 'section',
                                'title' => __('Tùy chọn các chức năng khác', 'HuyKira'),
-                               'indent' => true 
+                               'indent' => true
                            ),
                             array(
                                 'id'       => 'check',
                                 'type'     => 'checkbox',
-                                'title'    => __('Ẩn các Menu không cần thiết', 'HuyKira'), 
+                                'title'    => __('Ẩn các Menu không cần thiết', 'HuyKira'),
                                 'subtitle' => __('Tích chọn các menu muốn ẩn', 'HuyKira'),
                                 'options'  => array(
                                     '1' => 'Menu Media',
@@ -190,7 +218,7 @@
                             array(
 
                                 'id'       => 'hidemenu',
-                                'type'     => 'switch', 
+                                'type'     => 'switch',
                                 'title'    => __('Ẩn thanh điều kiển', 'HuyKira'),
                                 'subtitle' => __('Ản thanh điều kiển admin ngoài front end khi đã đăng nhập.', 'HuyKira'),
                                 'default'  => true,

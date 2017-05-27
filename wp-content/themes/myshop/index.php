@@ -16,7 +16,7 @@
 				</div>
 			</div> <!-- end block-slider -->
 			<div class="block-product">
-				<h3><span>Sản phẩm nỗi bật</span></h3>
+				<h3><span><?php echo $hk_options[sp1_head_text] ?: 'Sản phẩm nổi bật'; ?></span></h3>
 				<ul class="list-hot">
 					<?php $args = array( 'post_type' => 'product','posts_per_page' =>15, 'meta_key' => '_featured','meta_value' => 'yes',); ?>
 			        <?php $getposts = new WP_query( $args);?>
@@ -46,7 +46,7 @@
 				</ul>
 			</div> <!-- end block-product -->
 			<div class="block-product">
-				<h3><span>Sản phẩm mới</span></h3>
+				<h3><span><?php echo $hk_options[sp2_head_text] ?: 'Sản phẩm mới'; ?></span></h3>
 				<ul class="list-news">
 					<?php $args = array( 'post_type' => 'product','posts_per_page' =>15,); ?>
 			        <?php $getposts = new WP_query( $args);?>
@@ -87,7 +87,7 @@
 			</div> <!-- end block-fashion -->
 
 			<div class="block-news-h">
-				<h3><span>Tin tức</span></h3>
+				<h3><span><?php echo $hk_options[news_head_text] ?: 'Tin tức'; ?></span></h3>
 				<div class="row">
 					<!-- Get post News Query -->
 					<?php $getposts = new WP_query(); $getposts->query('post_status=publish&showposts=4&cat=1'); ?>
@@ -101,7 +101,7 @@
 									<?php echo teaser(30); ?>
 								</p>
 								<div class="hk-date"><span><i class="fa fa-calendar-minus-o" aria-hidden="true"></i> <?php echo get_the_date('d/m/Y') ?></span></div>
-								<a href="<?php the_permalink(); ?>" class="read-more">Xem thêm</a>					
+								<a href="<?php the_permalink(); ?>" class="read-more">Xem thêm</a>
 							</div>
 						</div>
 					<?php endwhile; wp_reset_postdata(); ?>
